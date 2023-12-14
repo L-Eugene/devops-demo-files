@@ -6,15 +6,15 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder  ".", "/vagrant", disabled: false
 
     config.vm.define "node0" do |node|
-        node.vm.network "private_network", ip: "192.168.33.9"
+        node.vm.network "private_network", ip: "192.168.56.9"
     end
 
     config.vm.define "node1" do |node|
-        node.vm.network "private_network", ip: "192.168.33.10"
+        node.vm.network "private_network", ip: "192.168.56.10"
     end
 
     config.vm.define "node2" do |node|
-        node.vm.network "private_network", ip: "192.168.33.11"
+        node.vm.network "private_network", ip: "192.168.56.11"
 
         # Копируем внутрь хоста приватные ключи от других серверов
         # Они понадобятся для подключения ansible
