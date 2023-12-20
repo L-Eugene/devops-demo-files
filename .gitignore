@@ -1,2 +1,3 @@
 *.code-workspace
 .vagrant
+*VBoxHeadless*.log
